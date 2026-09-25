@@ -1,5 +1,7 @@
 # VeriMind AI
 
+The free frontend demo is published through GitHub Pages when the Pages workflow completes.
+
 VeriMind AI is an enterprise-grade multi-agent reasoning and verification platform designed for evidence-backed answers, safe failure, and independent validation. Instead of a general-purpose chatbot, every response is produced through a structured workflow of planning, retrieval, tooling, verification, criticism, and finalization.
 
 ## Overview
