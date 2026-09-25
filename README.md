@@ -43,6 +43,10 @@ flowchart TD
 - Backend: Railway
 - Database: Supabase
 
+### Public deployment
+
+The repository includes [`render.yaml`](./render.yaml) for deploying the backend API to Render and [`vercel.json`](./vercel.json) for deploying the Next.js frontend to Vercel. Deploy the backend first, then set `NEXT_PUBLIC_API_URL` in the Vercel project to the deployed backend URL.
+
 ## Quick start
 
 ```bash
