@@ -40,6 +40,16 @@ export default function VerifyPage() {
     setError('');
     setResult(null);
     try {
+      if (
+        typeof window !== 'undefined' &&
+        window.location.hostname !== 'localhost' &&
+        window.location.hostname !== '127.0.0.1' &&
+        API_URL.includes('localhost')
+      ) {
+        throw new Error(
+          'The public demo frontend is online, but its verification API has not been deployed yet. Run the backend locally or configure NEXT_PUBLIC_API_URL with a public FastAPI URL.'
+        );
+      }
       const response = await fetch(`${API_URL}/chat`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
