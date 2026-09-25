@@ -47,6 +47,8 @@ flowchart TD
 
 The repository includes [`render.yaml`](./render.yaml) for deploying the backend API to Render and [`vercel.json`](./vercel.json) for deploying the Next.js frontend to Vercel. Deploy the backend first, then set `NEXT_PUBLIC_API_URL` in the Vercel project to the deployed backend URL.
 
+For a no-cost frontend-only demo, enable GitHub Pages for the repository using the `GitHub Actions` source. The included `.github/workflows/deploy-pages.yml` builds and publishes the static frontend automatically. The Pages URL will be `https://karthikeyanama.github.io/hackthon/`.
+
 ## Quick start
 
 ```bash
